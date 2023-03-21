@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.27679c79.css",
+    "main.js": "/My-Portfolio/static/js/main.33f1b7fe.js",
+    "static/media/i.jpg": "/My-Portfolio/static/media/i.e467075e00011ee21e29.jpg",
+    "static/media/algoritmika.jpg": "/My-Portfolio/static/media/algoritmika.783e6bcb68510ad33d14.jpg",
+    "static/media/jquery.jpg": "/My-Portfolio/static/media/jquery.94bcc7157ca9d6c7deb6.jpg",
+    "static/media/js.jpg": "/My-Portfolio/static/media/js.ca069ac33456d31af096.jpg",
+    "static/media/webDebeloper.jpg": "/My-Portfolio/static/media/webDebeloper.01d6fc18b03a31ee0244.jpg",
+    "static/media/htmlCss.jpg": "/My-Portfolio/static/media/htmlCss.c96cdf4bd86ae39885d6.jpg",
+    "static/media/headerBackDeskt.png": "/My-Portfolio/static/media/headerBackDeskt.66f06fb329e790964821.png",
+    "static/media/arrowPrev.svg": "/My-Portfolio/static/media/arrowPrev.8d5c8e44ed0aa27031ae.svg",
+    "index.html": "/My-Portfolio/index.html",
+    "main.27679c79.css.map": "/My-Portfolio/static/css/main.27679c79.css.map",
+    "main.33f1b7fe.js.map": "/My-Portfolio/static/js/main.33f1b7fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27679c79.css",
+    "static/js/main.33f1b7fe.js"
+  ]
+}
