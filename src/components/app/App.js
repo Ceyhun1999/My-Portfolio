@@ -18,6 +18,7 @@ export default function App() {
                 <Sertificates changeNavActiveLink={changeNavActiveLink} />
                 <Skills changeNavActiveLink={changeNavActiveLink} />
             </main>
+            <div className="hello"></div>
         </>
     );
 }
