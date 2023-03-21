@@ -35,7 +35,7 @@
 
 @media only screen and (min-width: 768px) {
 
-    .about { text-align: inherit; font-size: 1em }
+    #about { text-align: inherit; font-size: 1em }
     .about__img {  min-width: 300px; height: 450px }
     .about__content { flex-direction: row; gap: 50px }
 }

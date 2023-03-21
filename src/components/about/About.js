@@ -3,9 +3,7 @@ import { useInView } from "react-intersection-observer";
 import "./About.css";
 
 export default function About({ changeNavActiveLink }) {
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-    });
+    const { ref, inView } = useInView({ threshold: 0.5 });
 
     useEffect(() => {
         if (inView) changeNavActiveLink("about");

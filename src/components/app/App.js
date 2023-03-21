@@ -1,9 +1,10 @@
+import { useState } from "react";
+
 import About from "../about/About";
 import Header from "../header/Header";
 import Skills from "../skills/Skills";
-
 import Sertificates from "../certificates/Certificates";
-import { useState } from "react";
+
 
 export default function App() {
     const [navActiveLink, setNavActiveLink] = useState(null);

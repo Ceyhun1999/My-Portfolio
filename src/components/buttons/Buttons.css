@@ -26,15 +26,14 @@
 
 @media only screen and (min-width: 768px) {
 
+    .btnKaiAnimation { transition: 0.3s ease-out }
     .btnKaiAnimation a { padding: 1rem 2rem }
     .btnKaiAnimation:nth-of-type(2) { width: 195px; height: 55px }
-
+    .btnKaiAnimation:hover a { color: black!important }
     .btnKaiAnimation:hover {
         color: black;
         background-color: white;
         border-color: white;
         box-shadow: 0 0 80px white;
     }
-    
-    .btnKaiAnimation:hover a { color: black!important }
 }

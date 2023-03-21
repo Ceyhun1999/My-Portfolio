@@ -1,9 +1,11 @@
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 import Navigation from "../navigation/Navigation";
 import BtnKaiAnimation from "../buttons/Buttons";
 import "./Header.css";
 import "animate.css";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+
 
 export default function Header({ navActiveLink, changeNavActiveLink }) {
     const { ref, inView } = useInView({

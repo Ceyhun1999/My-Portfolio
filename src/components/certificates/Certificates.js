@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { sliderData } from "../../data/Data";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Mousewheel } from "swiper";
 
 import "./Certificates.css";
 import "swiper/css";
@@ -7,11 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination, A11y, Mousewheel } from "swiper";
-import { useInView } from "react-intersection-observer";
-
-export default function Certificates({changeNavActiveLink}) {
+export default function Certificates({ changeNavActiveLink }) {
     const [width, setWidth] = useState(document.documentElement.clientWidth);
     const updateDimensions = () => setWidth(document.documentElement.clientWidth);
 

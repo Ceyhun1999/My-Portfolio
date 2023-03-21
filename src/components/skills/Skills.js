@@ -1,8 +1,8 @@
-import "./Skills.css";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 import TagCloud from "TagCloud";
-import { useInView } from "react-intersection-observer";
+import "./Skills.css";
 
 export default function Skills({changeNavActiveLink}) {
     const [state, setState] = useState(null);

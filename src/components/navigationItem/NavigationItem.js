@@ -1,5 +1,3 @@
-import "./NavigationItem.css";
-
 import {
     AiOutlineArrowUp,
     AiOutlineExperiment,
@@ -9,7 +7,8 @@ import {
 } from "react-icons/ai";
 import { RiComputerLine, RiServiceLine } from "react-icons/ri";
 import { TbSchool } from "react-icons/tb";
-import { useEffect } from "react";
+
+import "./NavigationItem.css";
 
 export default function NavigationItem({ href, i, onChangeActiveLink, index, navActiveLink }) {
     return (
