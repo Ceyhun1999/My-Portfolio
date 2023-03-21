@@ -1,17 +1,10 @@
-import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 import TagCloud from "TagCloud";
 import "./Skills.css";
 
-export default function Skills({ changeNavActiveLink }) {
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-    });
-
-    useEffect(() => {
-        if (inView) changeNavActiveLink("skills");
-    }, [inView]);
+export default function Skills() {
+    
 
     useEffect(() => {
         return () => {
@@ -48,7 +41,7 @@ export default function Skills({ changeNavActiveLink }) {
     }, []);
 
     return (
-        <section ref={ref} id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+        <section  id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
             <div className="container">
                 <h2 className="skills__title">Technical Skills</h2>
                 <div className="skills__content">
