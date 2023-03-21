@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    color: #fff;
+    padding-bottom: 50px;
 }
 
 .header__contentText {
@@ -18,7 +18,7 @@
     border-radius: 48.7% 52% 48.7% 52%;
     width: 217px;
     height: 217px;
-    transition: 0.3s ease-out;
+    transition: .5s box-shadow;
     background: url('../../../public/assets/img/headerImg/headerBackMobile2.png') center/cover;
 }
 
@@ -30,30 +30,21 @@
     gap: 20px;
 }
 
-@media only screen and (min-width: 480px) {
-
-    .header__img {
-        width: 253px;
-        height: 253px;
-        background: url('../../../public/assets/img/headerImg/headerBackMobile.png') center/cover;
-    }
-}
+header h1 { font-size: 2em }
 
 @media only screen and (min-width: 768px) {
 
     .header__img {
-        width: 325px;
-        height: 325px;
+        width: 300px;
+        height: 300px;
         background: url('../../../public/assets/img/headerImg/headerBackDeskt.png') center/cover;
+        background-position: 0 0;
     }
 
-    .header__buttons {
-        flex-direction: row;
-    }
+    .header__buttons { flex-direction: row }
 
     .header__img:hover {
         cursor: pointer;
-        background: url('../../../public/assets/img/headerImg/headerBackDesktHover.png') center/cover;
-        box-shadow: 0 0 50px #64ffda;
+        box-shadow: 0 0 50px #fff;
     }
 }

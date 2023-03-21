@@ -1,11 +1,22 @@
+import Navigation from "../navigation/Navigation";
 import BtnKaiAnimation from "../buttons/Buttons";
-import   "./Header.css";
+import "./Header.css";
+import "animate.css";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
+export default function Header({ navActiveLink, changeNavActiveLink }) {
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+    });
 
-export default function Header() {
+    useEffect(() => {
+        if (inView) changeNavActiveLink("home");
+    }, [inView]);
+
     return (
-        <header>
-          <div className="container">
+        <header ref={ref} id="home">
+            <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
                 <div className="header__content">
                     <div className="header__contentText">
                         <span>Hello</span>
@@ -23,6 +34,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+            <Navigation navActiveLink={navActiveLink} />
         </header>
     );
 }

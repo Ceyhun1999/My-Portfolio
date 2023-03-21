@@ -1,9 +1,25 @@
-import { useEffect } from "react";
-import TagCloud from "TagCloud";
 import "./Skills.css";
+import { useEffect, useState } from "react";
 
-export default function Skills() {
+import TagCloud from "TagCloud";
+import { useInView } from "react-intersection-observer";
+
+export default function Skills({changeNavActiveLink}) {
+    const [state, setState] = useState(null);
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+    });
+
     useEffect(() => {
+        if (inView) changeNavActiveLink("skills");
+    }, [inView]);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            if (document.documentElement.clientWidth < 560) setState(true);
+            else if (document.documentElement.clientWidth > 560) setState(false);
+        });
+
         return () => {
             const container = ".tagcloud";
             const texts = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
@@ -25,10 +41,14 @@ export default function Skills() {
 
             let radius = 270;
 
-            let body = document.querySelector("body");
-
-            if (body.offsetWidth < 530) {
-                radius = 150;
+            if (document.documentElement.clientWidth < 560) {
+                let first = document.querySelector(".tagcloud > .tagcloud");
+                first?.remove();
+                radius = 160;
+            } else if (document.documentElement.clientWidth > 560) {
+                let first = document.querySelector(".tagcloud > .tagcloud");
+                first?.remove();
+                radius = 270;
             }
 
             const options = {
@@ -43,13 +63,20 @@ export default function Skills() {
             const spansArr = Array.from(spans);
             spansArr.forEach((item, index) => (item.innerHTML = imgs[index]));
         };
-    }, []);
+    }, [state]);
 
     return (
-        <section className="skills">
-            <h2 className="skills__title">TECHNICAL SKILLS</h2>
-            <div className="skills__content">
-                <span className="tagcloud"></span>
+        <section
+            ref={ref}
+            id="skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease">
+            <div className="container">
+                <h2 className="skills__title">Technical Skills</h2>
+                <div className="skills__content">
+                    <span className="tagcloud"></span>
+                </div>
             </div>
         </section>
     );

@@ -1,11 +1,5 @@
-import styles from "./Buttons.module.css";
+import "./Buttons.css";
 
 export default function BtnKaiAnimation(props) {
-    return (
-        <button className={styles.btnKaiAnimation}>
-            {props.children}
-        </button>
-    );
+    return <button className={"btnKaiAnimation"}>{props.children}</button>;
 }
-
-

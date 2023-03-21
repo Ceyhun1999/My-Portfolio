@@ -1,0 +1,169 @@
+.sertificates {
+    padding: 20px 20px 50px 20px;
+    min-height: 100vh;
+}
+
+.sertificates__title {
+    padding: 20px 0 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.swiper {
+    color: #fff;
+    height: 400px;
+}
+
+.swiper-pagination-bullet { background: #fff!important }
+
+.swiper-button-prev , .swiper-button-next {
+    min-width: 42px;
+    min-height: 42px;
+    border-radius: 50%;
+    transition: 0.2s;
+    background-color: #d4cece;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    content: ''!important;
+    width: 30px;
+    height: 30px;
+    background: url('../../../public/assets/img/certificates/arrowPrev.svg') center/cover no-repeat;
+    position: absolute;
+    background-size: 22px;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+.swiper-button-next::after { transform: rotate(-90deg) }
+
+.slide-item {
+    height: 100%;
+    cursor: pointer;
+}
+
+.htmlCss { background: url('../../../public/assets/img/certificates/htmlCss.jpg') center/cover }
+.webDeveloper { background: url('../../../public/assets/img/certificates/webDebeloper.jpg') center/cover }
+.js { background: url('../../../public/assets/img/certificates/js.jpg') center/cover }
+.jquery { background: url('../../../public/assets/img/certificates/jquery.jpg') center/cover }
+.alqoritmika { background: url('../../../public/assets/img/certificates/algoritmika.jpg') center/cover no-repeat }
+
+.slide__splitter {
+    position: absolute;
+    top: 398px;
+    left: 0%;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: .6s;
+}
+
+.slide__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    transition: .6s;
+    opacity: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.slide__splitter::before,
+.slide__splitter::after {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 100%;
+    height: 2px;
+    background: #302828;
+    transition: .6s;
+    transition-delay: 0s;
+}
+
+.slide__shadow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+}
+
+.slide-item:hover .slide__shadow {
+    background: rgba(0, 0, 0, .6);
+    transform: scale(.85);
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background: #c7c5c5; 
+    transition: .5s;
+    filter: brightness(0.95)
+}
+
+.slide-item:hover .slide__splitter {
+    transform: translateY(-12em);
+    left: 10%;
+    width: 80%;
+    opacity: 1;
+}
+
+.slide-item:hover .slide__splitter::before {
+    transform: rotate(-20deg);
+    transition-delay: .6s;
+    opacity: .6;
+}
+
+.slide-item:hover .slide__splitter::after {
+    transform: rotate(20deg);
+    transition-delay: .6s;
+    opacity: .6;
+}
+
+.slide-item:hover .slide__text { 
+    opacity: 1;
+    font-size: 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .slide-item .slide__splitter {
+        transform: translateY(-12em);
+        left: 10%;
+        width: 80%;
+        opacity: 1;
+    }
+
+    .slide-item .slide__splitter::before {
+        transform: rotate(-20deg);
+        transition-delay: .6s;
+        opacity: .6;
+    }
+
+    .slide-item .slide__splitter::after {
+        transform: rotate(20deg);
+        transition-delay: .6s;
+        opacity: .6;
+    }
+
+    .slide-item .slide__shadow {
+        background: rgba(0, 0, 0, .6);
+        transform: scale(.85);
+    }
+
+    .slide__text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        position: absolute;
+        transition: .6s;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1108px) {
+    .alqoritmika { background: url('../../../public/assets/img/certificates/algoritmika.jpg') left/cover no-repeat }
+}

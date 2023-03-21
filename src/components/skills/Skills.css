@@ -1,15 +1,15 @@
-.skills {
+#skills {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 }
 
-.skills__title {
-    padding-top: 20px;
-}
+.skills__title { padding-top: 20px }
 
 .skills__content {
     position: absolute;
@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
 }
 
-.skills img {
+#skills img {
     width: 50px;
     height: 50px;
 }
