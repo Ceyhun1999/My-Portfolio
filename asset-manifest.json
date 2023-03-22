@@ -1,20 +1,32 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.e62fa77a.css",
-    "main.js": "/My-Portfolio/static/js/main.e90bf4d7.js",
+    "main.js": "/My-Portfolio/static/js/main.38bf051c.js",
     "static/media/i.jpg": "/My-Portfolio/static/media/i.e467075e00011ee21e29.jpg",
     "static/media/algoritmika.jpg": "/My-Portfolio/static/media/algoritmika.783e6bcb68510ad33d14.jpg",
     "static/media/jquery.jpg": "/My-Portfolio/static/media/jquery.94bcc7157ca9d6c7deb6.jpg",
     "static/media/js.jpg": "/My-Portfolio/static/media/js.ca069ac33456d31af096.jpg",
     "static/media/webDebeloper.jpg": "/My-Portfolio/static/media/webDebeloper.01d6fc18b03a31ee0244.jpg",
     "static/media/htmlCss.jpg": "/My-Portfolio/static/media/htmlCss.c96cdf4bd86ae39885d6.jpg",
+    "static/media/github.png": "/My-Portfolio/static/media/github.be1bc645eccdcd20e41d.png",
     "static/media/headerBackDeskt.png": "/My-Portfolio/static/media/headerBackDeskt.66f06fb329e790964821.png",
+    "static/media/jquery.svg": "/My-Portfolio/static/media/jquery.429008ec422ddc57654915f256a06b95.svg",
+    "static/media/sass.svg": "/My-Portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/react.svg": "/My-Portfolio/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
+    "static/media/redux.svg": "/My-Portfolio/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/adobe-photoshop.svg": "/My-Portfolio/static/media/adobe-photoshop.4a391b7067e054e5d86cf57fa1723159.svg",
+    "static/media/bootstrap.svg": "/My-Portfolio/static/media/bootstrap.98585727bcfe0b1555649ec9bbab236c.svg",
+    "static/media/js.svg": "/My-Portfolio/static/media/js.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/bem.svg": "/My-Portfolio/static/media/bem.565ca7bcd3b5d1a31a939d2f4330e66f.svg",
+    "static/media/figma.svg": "/My-Portfolio/static/media/figma.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
+    "static/media/css.svg": "/My-Portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/My-Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "index.html": "/My-Portfolio/index.html",
     "main.e62fa77a.css.map": "/My-Portfolio/static/css/main.e62fa77a.css.map",
-    "main.e90bf4d7.js.map": "/My-Portfolio/static/js/main.e90bf4d7.js.map"
+    "main.38bf051c.js.map": "/My-Portfolio/static/js/main.38bf051c.js.map"
   },
   "entrypoints": [
     "static/css/main.e62fa77a.css",
-    "static/js/main.e90bf4d7.js"
+    "static/js/main.38bf051c.js"
   ]
 }
