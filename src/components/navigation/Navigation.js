@@ -6,10 +6,8 @@ import "./Navigation.css";
 export default function Navigation({ navActiveLink }) {
     const [index, setIndex] = useState(10);
     const onChangeActiveLink = (x) => setIndex(x);
-
-    useEffect(() => {
-        setIndex(10);
-    }, [navActiveLink]);
+    
+    useEffect(() => setIndex(10), [navActiveLink]);
 
     return (
         <div className="navigation">

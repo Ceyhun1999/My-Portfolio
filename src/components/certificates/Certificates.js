@@ -13,11 +13,8 @@ import "swiper/css/scrollbar";
 
 export default function Certificates({ changeNavActiveLink }) {
     const [width, setWidth] = useState(document.documentElement.clientWidth);
+    const { ref, inView } = useInView({ threshold: 0.5 });
     const updateDimensions = () => setWidth(document.documentElement.clientWidth);
-
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-    });
 
     useEffect(() => {
         if (inView) changeNavActiveLink("education");

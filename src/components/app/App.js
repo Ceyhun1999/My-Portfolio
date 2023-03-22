@@ -4,7 +4,7 @@ import About from "../about/About";
 import Header from "../header/Header";
 import Skills from "../skills/Skills";
 import Sertificates from "../certificates/Certificates";
-
+import Contact from "../contact/Contact";
 
 export default function App() {
     const [navActiveLink, setNavActiveLink] = useState(null);
@@ -18,6 +18,9 @@ export default function App() {
                 <Sertificates changeNavActiveLink={changeNavActiveLink} />
                 <Skills changeNavActiveLink={changeNavActiveLink} />
             </main>
+            <footer>
+                <Contact/>
+            </footer>
         </>
     );
 }

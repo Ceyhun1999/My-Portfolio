@@ -13,10 +13,13 @@
 .sertificates {
     padding: 20px 20px 50px 20px;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sertificates__title {
-    padding: 20px 0 50px 0;
+    padding-bottom:  50px;
     text-align: center;
     color: #fff;
 }
@@ -60,7 +63,7 @@
     }
 
     .slide-item:hover .slide__shadow {
-        background: rgba(0, 0, 0, .6);
+        background: rgba(0, 0, 0, .5);
         transform: scale(.85);
     }
 

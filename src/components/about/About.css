@@ -12,7 +12,7 @@
 
 .about__title {
     width: 100%;
-    padding-bottom: 20px;
+    padding: 20px 0 50px 0;
     text-align: center;
 }
 
@@ -36,6 +36,7 @@
 @media only screen and (min-width: 768px) {
 
     #about { text-align: inherit; font-size: 1em }
+    .about__title { padding: 0 0 50px 0 }
     .about__img {  min-width: 300px; height: 450px }
     .about__content { flex-direction: row; gap: 50px }
 }

@@ -6,11 +6,8 @@ import BtnKaiAnimation from "../buttons/Buttons";
 import "./Header.css";
 import "animate.css";
 
-
 export default function Header({ navActiveLink, changeNavActiveLink }) {
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-    });
+    const { ref, inView } = useInView({ threshold: 0.5 });
 
     useEffect(() => {
         if (inView) changeNavActiveLink("home");

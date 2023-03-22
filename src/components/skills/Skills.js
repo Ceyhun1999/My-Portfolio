@@ -20,9 +20,7 @@ import "./Skills.css";
 
 export default function Skills({ changeNavActiveLink }) {
     const isFirstRender = useRef(true);
-    const { ref, inView } = useInView({
-        threshold: 0.5,
-    });
+    const { ref, inView } = useInView({ threshold: 0.5 });
 
     useEffect(() => {
         if (inView) changeNavActiveLink("skills");
@@ -64,10 +62,10 @@ export default function Skills({ changeNavActiveLink }) {
     }, []);
 
     return (
-        <section ref={ref} id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+        <section ref={ref} id="skills">
             <div className="container">
-                <h2 className="skills__title">Technical Skills</h2>
                 <div className="skills__content">
+                    <h2 className="skills__title">Technical Skills</h2>
                     <span className="tagcloud"></span>
                 </div>
             </div>
