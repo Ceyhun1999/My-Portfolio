@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-import photopea from "../../img/skillsLogo/adobe-photoshop.svg";
+import photopea from "../../img/skillsLogo/photopea.svg";
 import react from "../../img/skillsLogo/react.svg";
 import html from "../../img/skillsLogo/html.svg";
 import adobePhotoshop from "../../img/skillsLogo/adobe-photoshop.svg";
@@ -66,7 +66,11 @@ export default function Skills({ changeNavActiveLink }) {
             <div className="container">
                 <div className="skills__content">
                     <h2 className="skills__title">Technical Skills</h2>
-                    <span className="tagcloud"></span>
+                    <span
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                        data-aos-easing="ease"
+                        className="tagcloud"></span>
                 </div>
             </div>
         </section>

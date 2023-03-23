@@ -11,11 +11,11 @@ export default function About({ changeNavActiveLink }) {
 
     return (
         <section ref={ref} id="about">
-            <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+            <div className="container">
                 <h2 className="about__title">About me</h2>
                 <div className="about__content">
                     <div className="about__img"></div>
-                    <div className="desc">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" className="desc">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem minus
                             accusamus explicabo dolor cum aspernatur itaque quibusdam distinctio qui

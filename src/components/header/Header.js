@@ -15,8 +15,12 @@ export default function Header({ navActiveLink, changeNavActiveLink }) {
 
     return (
         <header ref={ref} id="home">
-            <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
-                <div className="header__content">
+            <div className="container">
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="400"
+                    data-aos-easing="ease"
+                    className="header__content">
                     <div className="header__contentText">
                         <span>Hello</span>
                         <h1>I'm Jeyhun</h1>

@@ -1,3 +1,4 @@
+import { contactData } from "../../data/Data";
 import "./Contact.css";
 
 import { SiGmail, SiWhatsapp } from "react-icons/si";
@@ -5,61 +6,61 @@ import { BsTelegram, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { GoMarkGithub } from "react-icons/go";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
-export default function Contact() {
+export default function Contact({ changeNavActiveLink }) {
+    const { ref, inView } = useInView({ threshold: 0.5 });
+
+    useEffect(() => {
+        if (inView) changeNavActiveLink("contact");
+    }, [inView]);
+
     return (
-        <div id="contact">
+        <section ref={ref} id="contact">
             <div className="container">
                 <div className="contact__inner">
                     <h2 className="contact__title">Contact me</h2>
-                    <div className="contact__inner-item1">
-                        <div className="contact__item contact__gmail">
-                            <a target="_blank" href="mailto:ceyhun.rzayeev@gmail.com">
-                                <SiGmail />
-                                <h4>Gmail</h4>
-                                <h5>ceyhun.rzayeev@gmail.com</h5>
-                            </a>
-                        </div>
-                        <div className="contact__item contact__telegram">
-                            <a target="_blank" href="https://t.me/Jeyhun_Rzayev">
-                                <BsTelegram />
-                                <h4>Telegram</h4>
-                                <h5>@Jeyhun_Rzayev</h5>
-                            </a>
-                        </div>
-                        <div className="contact__item contact__linkedin">
-                            <a target="_blank" href="https://www.linkedin.com/in/ceyhun-rzayev/">
-                                <BsLinkedin />
-                                <h4>Linked In</h4>
-                                <h5>@Jeyhun-Rzayev</h5>
-                            </a>
-                        </div>
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="400"
+                        data-aos-easing="ease"
+                        className="contact__inner-item1">
+                        {contactData.data[0].data1.map((item, idx) => {
+                            return (
+                                <div key={idx} className="contact__item contact__gmail">
+                                    <a target="_blank" href={item.href}>
+                                        {item.title === "Gmail" ? <SiGmail /> : ""}
+                                        {item.title === "Telegram" ? <BsTelegram /> : ""}
+                                        {item.title === "Linked In" ? <BsLinkedin /> : ""}
+                                        <h4>{item.title}</h4>
+                                        <h5>{item.text}</h5>
+                                    </a>
+                                </div>
+                            );
+                        })}
                     </div>
-                    <div className="contact__inner-item2">
-                        <div className="contact__item contact__whatsapp">
-                            <a target="_blank" href="https://wa.me/944519993348">
-                                <IoLogoWhatsapp />
-                                <h4>WhatsApp</h4>
-                                <h5>+994 (51) 999 33 48</h5>
-                            </a>
-                        </div>
-                        <div className="contact__item contact__github">
-                            <a target="_blank" href="https://github.com/Ceyhun1999">
-                                <GoMarkGithub />
-                                <h4>GitHub</h4>
-                                <h5>Ceyhun1999</h5>
-                            </a>
-                        </div>
-                        <div className="contact__item contact__github">
-                            <a href="">
-                                <GoMarkGithub />
-                                <h4>GitHub</h4>
-                                <h5>Ceyhun1999</h5>
-                            </a>
-                        </div>
+
+                    <div
+                        data-aos="fade-up"
+                        data-aos-duration="400"
+                        data-aos-easing="ease"
+                        className="contact__inner-item2">
+                        {contactData.data[1].data2.map((item, idx) => {
+                            return (
+                                <div key={idx} className="contact__item contact__gmail">
+                                    <a target="_blank" href={item.href}>
+                                        {item.title === "WhatsApp" ? <IoLogoWhatsapp /> : ""}
+                                        {item.title === "GitHub" ? <GoMarkGithub /> : ""}
+                                        <h4>{item.title}</h4>
+                                        <h5>{item.text}</h5>
+                                    </a>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -2,6 +2,7 @@
     min-height: 100vh;
     position: relative;
     padding: 20px 0;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 }
 
 .contact__title {
@@ -46,13 +47,13 @@ h5 { padding-top: 10px }
 .contact__item svg {
     width: 30px;
     height: 30px;
-    transition: .3s;
+    transition: .2s;
 }
 
 .contact__item a {
     text-align: center;
     color: #fff;
-    transition: .3s;
+    transition: .2s;
 }
 
 @media only screen and (min-width: 768px) {

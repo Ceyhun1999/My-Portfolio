@@ -26,10 +26,13 @@ export default function Certificates({ changeNavActiveLink }) {
     }, []);
 
     return (
-        <div ref={ref} id="education" className="sertificates">
-            <div className="container" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease">
+        <section ref={ref} id="education" className="sertificates">
+            <div className="container">
                 <h2 className="sertificates__title">Certificates</h2>
                 <Swiper
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease"
                     modules={[Pagination, Autoplay, Mousewheel]}
                     slidesPerView={width > 700 ? 2 : 1}
                     spaceBetween={10}
@@ -55,6 +58,6 @@ export default function Certificates({ changeNavActiveLink }) {
                     ))}
                 </Swiper>
             </div>
-        </div>
+        </section>
     );
 }
