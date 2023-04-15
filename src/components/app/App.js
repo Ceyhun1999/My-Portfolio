@@ -6,6 +6,7 @@ import Skills from "../skills/Skills";
 import Sertificates from "../certificates/Certificates";
 import Contact from "../contact/Contact";
 import Experience from "../experience/Experience";
+import Portfolio from "../portfolio/Portfolio";
 
 export default function App() {
     const [navActiveLink, setNavActiveLink] = useState(null);
@@ -19,6 +20,7 @@ export default function App() {
                 <Sertificates changeNavActiveLink={changeNavActiveLink} />
                 <Experience changeNavActiveLink={changeNavActiveLink} />
                 <Skills changeNavActiveLink={changeNavActiveLink} />
+                <Portfolio changeNavActiveLink={changeNavActiveLink} />
             </main>
             <footer>
                 <Contact changeNavActiveLink={changeNavActiveLink} />

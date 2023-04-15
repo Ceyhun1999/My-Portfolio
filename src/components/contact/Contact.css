@@ -2,7 +2,6 @@
     min-height: 100vh;
     position: relative;
     padding: 20px 0;
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
 }
 
 .contact__title {
@@ -24,6 +23,7 @@
     flex-direction: column; 
     gap: 20px; 
 }
+
 .contact__inner-item2 { margin-top: 20px }
 
 .contact__item {

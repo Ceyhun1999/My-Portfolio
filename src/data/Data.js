@@ -5,6 +5,7 @@ const navBarData = {
         { href: "education" },
         { href: "experience" },
         { href: "skills" },
+        { href: "portfolio" },
         { href: "contact" },
     ],
 };
@@ -82,4 +83,120 @@ const contactData = {
     ],
 };
 
-export { navBarData, sliderData, contactData };
+const portfolioData = {
+    data: [
+        {
+            title: "AccessBank",
+            demo: "https://lucky-cucurucho-750cff.netlify.app",
+            github: "https://github.com/Ceyhun1999/AccessBank-Final-Project",
+            type: 'react'
+        },
+
+        {
+            title: "Pizza-App",
+            demo: "https://ceyhun1999.github.io/React-Pizza-App-Hooks/",
+            github: "https://github.com/Ceyhun1999/React-Pizza-App-Hooks",
+            type: 'react'
+        },
+
+        {
+            title: "Cocktail-App",
+            demo: "https://ceyhun1999.github.io/React-App-Cocktail-Hooks/",
+            github: "https://github.com/Ceyhun1999/React-App-Cocktail-Hooks",
+            type: 'react'
+        },
+
+        {
+            title: "Game: Puzzle",
+            demo: "https://cosmic-kangaroo-5e1e32.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Game-Puzzle",
+            type: 'jQuery'
+        },
+
+        {
+            title: "Game: Find Christmas Tree",
+            demo: "https://zingy-narwhal-67e5a3.netlify.app/",
+            github: "https://github.com/Ceyhun1999/GAME-Find-Christmas_Tree",
+            type: 'js'
+        },
+
+        {
+            title: "Game: Memory Card",
+            demo: "https://rococo-frangipane-6895ca.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Memory-Card-Game",
+            type: 'js'
+        },
+
+        {
+            title: "Game: 15 game puzzle",
+            demo: "https://tubular-daffodil-b8a97d.netlify.app/",
+            github: "https://github.com/Ceyhun1999/15-GAME-PUZZLE",
+            type: 'js'
+        },
+
+        {
+            title: "To-Do List",
+            demo: "https://musical-froyo-6c887b.netlify.app/",
+            github: "https://github.com/Ceyhun1999/To-Do-list",
+            type: 'js'
+        },
+
+        {
+            title: "Calculator",
+            demo: "https://cheerful-sprite-7a43dc.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Calculator",
+            type: 'js'
+        },
+
+        {
+            title: "Clothing-Store",
+            demo: "https://cheerful-sprite-7a43dc.netlify.app/",
+            github: "https://transcendent-torrone-df0c42.netlify.app/#teenagers",
+            type: 'website'
+        },
+
+        {
+            title: "Beauty-saloon",
+            demo: "https://magenta-belekoy-5278a1.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Beauty-saloon",
+            type: 'website'
+        },
+
+        {
+            title: "Bright-Lights",
+            demo: "https://thunderous-sprinkles-2ab39d.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Bright-Lights",
+            type: 'website'
+        },
+
+        {
+            title: "CloudBudget",
+            demo: "https://precious-banoffee-fb259c.netlify.app/",
+            github: "https://github.com/Ceyhun1999/CloudBudget",
+            type: 'website'
+        },
+
+        {
+            title: "Medical Clinic",
+            demo: "https://resonant-axolotl-a5ec2d.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Bootstrap-1",
+            type: 'website'
+        },
+
+        {
+            title: "Fitness-site",
+            demo: "amazing-pothos-49bcad.netlify.app",
+            github: "https://github.com/Ceyhun1999/Fitness-site",
+            type: 'website'
+        },
+
+        {
+            title: "Design-portfolio",
+            demo: "https://roaring-axolotl-314a84.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Design-portfolio",
+            type: 'website'
+        },
+    ],
+};
+
+export { navBarData, sliderData, contactData, portfolioData };

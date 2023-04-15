@@ -8,7 +8,6 @@ export default function Navigation({ navActiveLink }) {
     const onChangeActiveLink = (x) => setIndex(x);
     
     useEffect(() => setIndex(10), [navActiveLink]);
-
     return (
         <div className="navigation">
             {navBarData.data.map((item, i) => (

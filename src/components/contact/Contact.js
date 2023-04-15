@@ -40,7 +40,6 @@ export default function Contact({ changeNavActiveLink }) {
                             );
                         })}
                     </div>
-
                     <div
                         data-aos="fade-up"
                         data-aos-duration="400"
