@@ -13,6 +13,12 @@ const navBarData = {
 const sliderData = {
     data: [
         {
+            href: "https://heroic-cupcake-de1b2c.netlify.app",
+            class: "divAcademy",
+            text: "FrontEnd Development",
+        },
+
+        {
             href: "https://algorithmicschool.com/",
             class: "alqoritmika",
             text: "FrontEnd Development",
@@ -74,9 +80,9 @@ const contactData = {
                     text: "Ceyhun1999",
                 },
                 {
-                    href: "https://github.com/Ceyhun1999",
-                    title: "GitHub",
-                    text: "Ceyhun1999",
+                    href: "https://twitter.com/JeyhunRzayeev",
+                    title: "Twitter",
+                    text: "@JeyhunRzayeev",
                 },
             ],
         },
@@ -150,8 +156,8 @@ const portfolioData = {
 
         {
             title: "Clothing-Store",
-            demo: "https://cheerful-sprite-7a43dc.netlify.app/",
-            github: "https://transcendent-torrone-df0c42.netlify.app/#teenagers",
+            demo: "https://transcendent-torrone-df0c42.netlify.app/",
+            github: "https://github.com/Ceyhun1999/Clothing-Store",
             type: 'website'
         },
 
@@ -184,8 +190,8 @@ const portfolioData = {
         },
 
         {
-            title: "Fitness-site",
-            demo: "amazing-pothos-49bcad.netlify.app",
+            title: "Fitness",
+            demo: "https://amazing-pothos-49bcad.netlify.app/",
             github: "https://github.com/Ceyhun1999/Fitness-site",
             type: 'website'
         },

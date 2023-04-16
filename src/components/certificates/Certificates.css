@@ -29,6 +29,7 @@
 .js { background: url('../../../public/assets/img/certificates/js.jpg') center/cover }
 .jquery { background: url('../../../public/assets/img/certificates/jquery.jpg') center/cover }
 .alqoritmika { background: url('../../../public/assets/img/certificates/algoritmika.jpg') center/cover no-repeat }
+.divAcademy { background: url('../../../public/assets/img/certificates/divAcademy.png') center/contain no-repeat }
 
 .slide__text {
     top: 50%;

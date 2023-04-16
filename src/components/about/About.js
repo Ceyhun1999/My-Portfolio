@@ -17,34 +17,32 @@ export default function About({ changeNavActiveLink }) {
                     <div className="about__img"></div>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease" className="desc">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem minus
-                            accusamus explicabo dolor cum aspernatur itaque quibusdam distinctio qui
-                            architecto, veritatis facilis quasi iusto! Nesciunt, laborum et. Laudantium ullam,
-                            incidunt neque alias aliquid rem maxime facilis sed perspiciatis ipsam labore,
-                            nulla repellendus non esse explicabo pariatur. Labore corporis obcaecati
-                            cupiditate!
+                            I have been programming for a year. My main expertise is web development, and I am
+                            proficient in technologies such as HTML, CSS, JavaScript, jQuery, React, and
+                            Bootstrap, as well as other tools and frameworks.
                         </p>
                         <br />
-                        <br />
                         <p>
-                            Impedit, eos. Illo sunt dicta et odio temporibus sed. Animi quis ut consectetur
-                            hic nemo. Consectetur quisquam sit veniam aliquid iusto doloribus? Atque porro
-                            illum ut accusamus explicabo dolor cum aspernatur itaque quibusdam distinctio qui
-                            architecto, veritatis facilis quasi iusto! Nesciunt, laborum et. Laudantium ullam,
-                            incidunt neque alias aliquid rem maxime facilis sed perspiciatis ipsam labore,
-                            nulla repellendus non esse explicabo pariatur. Labore corporis obcaecati
-                            cupiditate!
+                            I also have a good command of the Russian language and actively study English, as
+                            I aim to expand my opportunities in the international IT industry.
                         </p>
                         <br />
+                        <p>
+                            Currently, I am focusing on developing in the direction of React and React Native
+                            - modern frameworks for building user interfaces and mobile applications. I am
+                            passionate about creating interactive and intuitive user interfaces that provide a
+                            satisfying user experience.
+                        </p>
                         <br />
                         <p>
-                            Impedit, eos. Illo sunt dicta et odio temporibus sed. Animi quis ut consectetur
-                            hic nemo. Consectetur quisquam sit veniam aliquid iusto doloribus? Atque porro
-                            illum ut accusamus explicabo dolor cum aspernatur itaque quibusdam distinctio qui
-                            architecto, veritatis facilis quasi iusto! Nesciunt, laborum et. Laudantium ullam,
-                            incidunt neque alias aliquid rem maxime facilis sed perspiciatis ipsam labore,
-                            nulla repellendus non esse explicabo pariatur. Labore corporis obcaecati
-                            cupiditate!
+                            In the future, I aspire not only to create websites but also to develop mobile
+                            applications. I strive to constantly improve my skills and learn new technologies
+                            to stay up-to-date and achieve my professional goals.
+                        </p>
+                        <br />
+                        <p>
+                            I am dedicated to continuous self-improvement, approach problem-solving
+                            creatively, and am always ready to embrace new challenges in the IT industry.
                         </p>
                     </div>
                 </div>

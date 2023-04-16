@@ -24,9 +24,7 @@ export default function Portfolio({ changeNavActiveLink }) {
     const { ref, inView } = useInView({ threshold: 0.1 });
     const [type, setType] = useState(null);
 
-    const onChangeType = (x) => {
-        setType(x);
-    };
+    const onChangeType = (x) => setType(x);
 
     useEffect(() => {
         if (inView) changeNavActiveLink("portfolio");
@@ -35,10 +33,10 @@ export default function Portfolio({ changeNavActiveLink }) {
     return (
         <section ref={ref} id="portfolio">
             <h2 className="portfolio__title">My Portfolio</h2>
-            <div>
+            <div className="portfolio__filter container">
                 <label onClick={() => onChangeType(null)}>
                     All
-                    <input type="radio" name="x" />
+                    <input type="radio" name="x" defaultChecked={true}  />
                 </label>
 
                 <label onClick={() => onChangeType("react")}>
@@ -57,69 +55,131 @@ export default function Portfolio({ changeNavActiveLink }) {
                 </label>
 
                 <label onClick={() => onChangeType("website")}>
-                    HTML, CSS, Bootstrap (websites)
+                    HTML, CSS, Bootstrap, JS (websites)
                     <input type="radio" name="x" />
                 </label>
             </div>
             <div className="container">
                 <div className="portfolio__content">
-                    {portfolioData.data.map((item, i) => (
-                        <div key={i} className="portfolio-item">
-                            <img
-                                src={
-                                    i === 0
-                                        ? a
-                                        : i === 1
-                                        ? b
-                                        : i === 2
-                                        ? c
-                                        : i === 3
-                                        ? d
-                                        : i === 4
-                                        ? e
-                                        : i === 5
-                                        ? f
-                                        : i === 6
-                                        ? g
-                                        : i === 7
-                                        ? h
-                                        : i === 8
-                                        ? j
-                                        : i === 9
-                                        ? k
-                                        : i === 10
-                                        ? l
-                                        : i === 11
-                                        ? m
-                                        : i === 12
-                                        ? n
-                                        : i === 13
-                                        ? o
-                                        : i === 14
-                                        ? p
-                                        : i === 15
-                                        ? q
-                                        : ""
-                                }
-                                alt="idx"
-                            />
-                            <div className="portfolio-item__text">
-                                <h3 className="portfolio-item__title">{item.title}</h3>
-                                <div>
-                                    <span>
-                                        <a target="_blank" href={item.demo}>
-                                            Demo
-                                        </a>
-                                    </span>
-                                    <span>
-                                        <a target="_blank" href={item.github}>
-                                            GitHub
-                                        </a>
-                                    </span>
+                    {portfolioData.data.map((item, i) => 
+                    { if(item.type === type) {
+                        return (
+                            <div key={i} className="portfolio-item">
+                                <img
+                                    src={
+                                        i === 0
+                                            ? a
+                                            : i === 1
+                                            ? b
+                                            : i === 2
+                                            ? c
+                                            : i === 3
+                                            ? d
+                                            : i === 4
+                                            ? e
+                                            : i === 5
+                                            ? f
+                                            : i === 6
+                                            ? g
+                                            : i === 7
+                                            ? h
+                                            : i === 8
+                                            ? j
+                                            : i === 9
+                                            ? k
+                                            : i === 10
+                                            ? l
+                                            : i === 11
+                                            ? m
+                                            : i === 12
+                                            ? n
+                                            : i === 13
+                                            ? o
+                                            : i === 14
+                                            ? p
+                                            : i === 15
+                                            ? q
+                                            : ""
+                                    }
+                                    alt="idx"
+                                />
+                                <div className="portfolio-item__text">
+                                    <h3 className="portfolio-item__title">{item.title}</h3>
+                                    <div>
+                                        <span>
+                                            <a target="_blank" href={item.demo}>
+                                                Demo
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a target="_blank" href={item.github}>
+                                                GitHub
+                                            </a>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    } else if(type === null) {
+                        return (
+                            <div key={i} className="portfolio-item">
+                                <img
+                                    src={
+                                        i === 0
+                                            ? a
+                                            : i === 1
+                                            ? b
+                                            : i === 2
+                                            ? c
+                                            : i === 3
+                                            ? d
+                                            : i === 4
+                                            ? e
+                                            : i === 5
+                                            ? f
+                                            : i === 6
+                                            ? g
+                                            : i === 7
+                                            ? h
+                                            : i === 8
+                                            ? j
+                                            : i === 9
+                                            ? k
+                                            : i === 10
+                                            ? l
+                                            : i === 11
+                                            ? m
+                                            : i === 12
+                                            ? n
+                                            : i === 13
+                                            ? o
+                                            : i === 14
+                                            ? p
+                                            : i === 15
+                                            ? q
+                                            : ""
+                                    }
+                                    alt="idx"
+                                />
+                                <div className="portfolio-item__text">
+                                    <h3 className="portfolio-item__title">{item.title}</h3>
+                                    <div>
+                                        <span>
+                                            <a target="_blank" href={item.demo}>
+                                                Demo
+                                            </a>
+                                        </span>
+                                        <span>
+                                            <a target="_blank" href={item.github}>
+                                                GitHub
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    } 
+                    })}
                 </div>
             </div>
         </section>

@@ -1,11 +1,11 @@
 import { contactData } from "../../data/Data";
 import "./Contact.css";
 
-import { SiGmail, SiWhatsapp } from "react-icons/si";
+import { SiGmail} from "react-icons/si";
 import { BsTelegram, BsLinkedin } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { GoMarkGithub } from "react-icons/go";
-import { FaWhatsappSquare } from "react-icons/fa";
+import {AiFillTwitterCircle} from "react-icons/ai"
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
@@ -51,6 +51,8 @@ export default function Contact({ changeNavActiveLink }) {
                                     <a target="_blank" href={item.href}>
                                         {item.title === "WhatsApp" ? <IoLogoWhatsapp /> : ""}
                                         {item.title === "GitHub" ? <GoMarkGithub /> : ""}
+                                        {item.title === "Twitter" ? <AiFillTwitterCircle /> : ""}
+
                                         <h4>{item.title}</h4>
                                         <h5>{item.text}</h5>
                                     </a>
