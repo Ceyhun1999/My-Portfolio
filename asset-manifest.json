@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.1ef2bc5d.css",
-    "main.js": "/My-Portfolio/static/js/main.90edc390.js",
+    "main.css": "/My-Portfolio/static/css/main.5196be14.css",
+    "main.js": "/My-Portfolio/static/js/main.3f7c31c2.js",
     "static/media/divAcademy.png": "/My-Portfolio/static/media/divAcademy.f643b0314aadd473e87f.png",
     "static/media/Game-Puzzle.png": "/My-Portfolio/static/media/Game-Puzzle.b670ee8e9eacd9d833da.png",
     "static/media/i.jpg": "/My-Portfolio/static/media/i.e467075e00011ee21e29.jpg",
@@ -40,11 +40,11 @@
     "static/media/css.svg": "/My-Portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "/My-Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "index.html": "/My-Portfolio/index.html",
-    "main.1ef2bc5d.css.map": "/My-Portfolio/static/css/main.1ef2bc5d.css.map",
-    "main.90edc390.js.map": "/My-Portfolio/static/js/main.90edc390.js.map"
+    "main.5196be14.css.map": "/My-Portfolio/static/css/main.5196be14.css.map",
+    "main.3f7c31c2.js.map": "/My-Portfolio/static/js/main.3f7c31c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ef2bc5d.css",
-    "static/js/main.90edc390.js"
+    "static/css/main.5196be14.css",
+    "static/js/main.3f7c31c2.js"
   ]
 }
