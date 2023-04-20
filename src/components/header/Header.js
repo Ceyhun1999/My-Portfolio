@@ -29,11 +29,18 @@ export default function Header({ navActiveLink, changeNavActiveLink }) {
                     <div className="header__img"></div>
                     <div className="header__buttons">
                         <BtnKaiAnimation>
-                            <a href="./assets/Jeyhun Rzayev CV.pdf" download="CV Jeyhun Rzayev.pdf">
+                            <a
+                                className="btn-cv"
+                                href="./assets/Jeyhun Rzayev CV.pdf"
+                                download="CV Jeyhun Rzayev.pdf">
                                 Download CV
                             </a>
                         </BtnKaiAnimation>
-                        <BtnKaiAnimation>Contact Me</BtnKaiAnimation>
+                        <BtnKaiAnimation>
+                            <a className="btn-contact" href="#contact">
+                                Contact Me
+                            </a>
+                        </BtnKaiAnimation>
                     </div>
                 </div>
             </div>

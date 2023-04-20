@@ -52,7 +52,6 @@ export default function Contact({ changeNavActiveLink }) {
                                         {item.title === "WhatsApp" ? <IoLogoWhatsapp /> : ""}
                                         {item.title === "GitHub" ? <GoMarkGithub /> : ""}
                                         {item.title === "Twitter" ? <AiFillTwitterCircle /> : ""}
-
                                         <h4>{item.title}</h4>
                                         <h5>{item.text}</h5>
                                     </a>

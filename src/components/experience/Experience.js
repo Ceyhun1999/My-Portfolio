@@ -15,12 +15,12 @@ export default function Experience({ changeNavActiveLink }) {
             <div className="container">
                 <div
                     data-aos="fade-up"
-                    data-aos-duration="400"
+                    data-aos-duration="1400"
                     data-aos-easing="ease"
                     className="experience__content">
                     <div
                         data-aos="fade-up"
-                        data-aos-duration="400"
+                        data-aos-duration="1400"
                         data-aos-easing="ease"
                         className="experience__content-item2">
                         <h3 className="experience-profession">Frontend Developer Intern</h3>

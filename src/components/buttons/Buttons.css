@@ -17,8 +17,10 @@
     padding: .8rem 1.5rem;
 }
 
+.btn-cv { padding: .8rem 1.5rem }
+
 .btnKaiAnimation a {
-    padding: .8rem 1.5rem;
+    
     display: block;
     text-decoration: none!important;
     color: #fff!important;
@@ -27,7 +29,7 @@
 @media only screen and (min-width: 768px) {
 
     .btnKaiAnimation { transition: 0.3s ease-out }
-    .btnKaiAnimation a { padding: 1rem 2rem }
+    .btn-cv { padding: 1rem 2rem }
     .btnKaiAnimation:nth-of-type(2) { width: 195px; height: 55px }
     .btnKaiAnimation:hover a { color: black!important }
     .btnKaiAnimation:hover {
