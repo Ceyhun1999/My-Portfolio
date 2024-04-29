@@ -1,0 +1,44 @@
+.btnKaiAnimation {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 10px white, 0 0 10px white inset;
+    text-shadow: 0 0 5px white, 0 0 10px white;
+    border-radius: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.btnKaiAnimation:nth-of-type(2) {
+    width: 158px;
+    height: 44px;
+}
+
+.btn-cv { padding: .8rem 1.5rem }
+.btn-contact {
+    height: 100%;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+.btnKaiAnimation a{
+    display: block;
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .btnKaiAnimation { transition: 0.3s ease-out }
+    .btn-cv { padding: 1rem 2rem }
+    .btnKaiAnimation:nth-of-type(2) { width: 195px; height: 55px }
+    .btnKaiAnimation:hover a { color: black!important }
+    .btnKaiAnimation:hover {
+        color: black;
+        background-color: white;
+        border-color: white;
+        box-shadow: 0 0 80px white;
+    }
+}

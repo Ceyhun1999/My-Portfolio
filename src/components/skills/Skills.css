@@ -1,0 +1,30 @@
+#skills {
+    display: flex;
+    min-height: 100vh;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#skills img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+

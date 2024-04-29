@@ -1,0 +1,42 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: .9em;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+}
+
+.about__title {
+    width: 100%;
+    padding: 20px 0 50px 0;
+    text-align: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    gap: 20px;
+}
+
+.about__img {
+    max-width: 300px;
+    width: 100%;
+    height: 450px;
+    border-radius: 40px;
+    background: url('https://fairplaydubai.com/img/ceyhunimg/myPhoto.jpg') center/cover;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #about { text-align: inherit; font-size: 1em }
+    .about__title { padding: 0 0 50px 0 }
+    .about__img {  min-width: 300px; height: 450px }
+    .about__content { flex-direction: row; gap: 50px }
+}

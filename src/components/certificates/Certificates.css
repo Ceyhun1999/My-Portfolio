@@ -1,0 +1,79 @@
+.swiper {
+    color: #fff;
+    height: 400px;
+}
+
+.swiper-pagination-bullet { background: #fff!important }
+
+.slide-item {
+    height: 100%;
+    cursor: pointer;
+}
+
+.sertificates {
+    padding: 20px 20px 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sertificates__title {
+    padding-bottom:  50px;
+    text-align: center;
+    color: #fff;
+}
+
+.htmlCss { background: url('https://fairplaydubai.com/img/ceyhunimg/htmlCss.jpg') center/cover }
+.webDeveloper { background: url('https://fairplaydubai.com/img/ceyhunimg/webDebeloper.jpg') center/cover }
+.js { background: url('https://fairplaydubai.com/img/ceyhunimg/js.jpg') center/cover }
+.jquery { background: url('https://fairplaydubai.com/img/ceyhunimg/jquery.jpg') center/cover }
+.alqoritmika { background: url('https://fairplaydubai.com/img/ceyhunimg/algoritmika.jpg') center/cover no-repeat }
+.divAcademy { background: url('https://fairplaydubai.com/img/ceyhunimg/divA.jpg') center/contain no-repeat }
+
+.slide__text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    transition: .6s;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.slide__shadow {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    background: rgba(0, 0, 0, .6);
+    transform: scale(.85);
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .slide__text { opacity: 0 }
+
+    .slide__shadow {
+        background: initial;
+        transform: initial;
+    }
+
+    .slide-item:hover .slide__shadow {
+        background: rgba(0, 0, 0, .5);
+        transform: scale(.85);
+    }
+
+    .slide-item:hover .slide__text { 
+        opacity: 1;
+        font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width: 1108px) {
+    .alqoritmika { background: url('../../../public/assets/img/certificates/algoritmika.jpg') left/cover no-repeat }
+}

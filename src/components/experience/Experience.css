@@ -1,0 +1,44 @@
+#experience {
+    min-height: 100vh;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px 20px 15px;
+}
+
+.experience__title { padding: 15px 0 }
+
+.experience__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.experience__content-item1, .experience__content-item2 {
+    max-width: 1100px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    min-height: 200px;
+    padding: 25px;
+}
+
+.experience-profession, .experience-company {
+    text-align: center;
+    font-weight: 400;
+}
+
+.experience-company { padding-bottom: 10px }
+
+.experience__content p {
+    font-weight: 300;
+    padding-bottom: 5px;
+}
+
+.experience__dataPlace {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
