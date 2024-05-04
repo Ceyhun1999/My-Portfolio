@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-Portfolio/static/css/main.17cf30ed.css",
-    "main.js": "/My-Portfolio/static/js/main.1f61e062.js",
+    "main.js": "/My-Portfolio/static/js/main.93ea0c93.js",
     "static/media/Game-Puzzle.png": "/My-Portfolio/static/media/Game-Puzzle.b670ee8e9eacd9d833da.png",
     "static/media/website3.png": "/My-Portfolio/static/media/website3.1be5a0f6bf255a89cb11.png",
     "static/media/website6.png": "/My-Portfolio/static/media/website6.3b78682b616dbaeff93b.png",
@@ -36,10 +36,10 @@
     "static/media/html.svg": "/My-Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "index.html": "/My-Portfolio/index.html",
     "main.17cf30ed.css.map": "/My-Portfolio/static/css/main.17cf30ed.css.map",
-    "main.1f61e062.js.map": "/My-Portfolio/static/js/main.1f61e062.js.map"
+    "main.93ea0c93.js.map": "/My-Portfolio/static/js/main.93ea0c93.js.map"
   },
   "entrypoints": [
     "static/css/main.17cf30ed.css",
-    "static/js/main.1f61e062.js"
+    "static/js/main.93ea0c93.js"
   ]
 }
