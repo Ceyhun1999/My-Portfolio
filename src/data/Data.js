@@ -100,12 +100,6 @@ const portfolioData = {
             img: 'https://fairplaydubai.com/img/ceyhunimg/amazon.jpg'
         },
         {
-            title: "SLS GROUP",
-            demo: "https://slsgroup.az/ru/",
-            type: 'website',
-            img: 'https://fairplaydubai.com/img/ceyhunimg/sls.jpg'
-        },
-        {
             title: "Silo Construction",
             demo: "https://siloconstruction.az/",
             type: 'website',
